@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore - POS & Barcode Solutions</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container d-flex align-items-center justify-content-center gap-2">
+      <img src="img22.jpeg" alt="C Tech Logo" class="logo-img">
+      <h1 class="logo-text m-0">SI <span>Tech</span></h1>
+    </div>
+  </header>
+
+  <!-- Products -->
+  <section class="products py-4">
+    <div class="container-fluid px-3">
+      <div class="row g-3">
+
+        <!-- 1 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img1.jpeg" class="card-img-top img-fluid product-img" alt="Zebra ZD411">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Zebra ZD411</h6>
+              <p class="price mb-2">15000 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('Zebra ZD411','15000 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img2.jpeg" class="card-img-top img-fluid product-img" alt="Datalogic QW-2100 Lite">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Barcode Scanner<br><b>Datalogic QW-2100 Lite</b></h6>
+              <p class="price mb-2">2850 EGP</p>
+            <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('Datalogic QW-2100 Lite','2850 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img3.jpeg" class="card-img-top img-fluid product-img" alt="U.POS 7000">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Barcode Scanner<br><b>U.POS 7000</b></h6>
+              <p class="price mb-2">2550 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('U.POS 7000','2550 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img5.jpeg" class="card-img-top img-fluid product-img" alt="XPrinter XP-370B USB">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Barcode Printer<br><b>XPrinter XP-370B USB</b></h6>
+              <p class="price mb-2">3500 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('XPrinter XP-370B USB','3500 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img6.jpeg" class="card-img-top img-fluid product-img" alt="X-Printer XP-420B">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Barcode Printer<br><b>X-Printer XP-420B</b></h6>
+              <p class="price mb-2">4800 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('X-Printer XP-420B','4800 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img8.jpeg" class="card-img-top img-fluid product-img" alt="Honeywell HH490">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Barcode Scanner<br><b>Honeywell HH490</b></h6>
+              <p class="price mb-2">5000 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('Honeywell HH490','5000 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img9.jpeg" class="card-img-top img-fluid product-img" alt="X-Printer XP-D200N">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Receipt Printer<br><b>X-Printer XP-D200N</b></h6>
+              <p class="price mb-2">2650 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('X-Printer XP-D200N','2650 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img10.jpeg" class="card-img-top img-fluid product-img" alt="U.POS UP-PS700">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Barcode Scanner<br><b>U.POS UP-PS700</b></h6>
+              <p class="price mb-2">1350 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('U.POS UP-PS700','1350 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img12.jpeg" class="card-img-top img-fluid product-img" alt="U.POS UP-862 H 2D">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Barcode Scanner<br><b>U.POS UP-862 H 2D</b></h6>
+              <p class="price mb-2">3000 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('U.POS UP-862 H 2D','3000 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img13.jpeg" class="card-img-top img-fluid product-img" alt="U.POS UP-990">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Barcode Scanner<br><b>U.POS UP-990</b></h6>
+              <p class="price mb-2">2300 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('U.POS UP-990','2300 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img14.jpeg" class="card-img-top img-fluid product-img" alt="Cash Drawer X4">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Cash Drawer X4<br><b>G.W: 6.8 KG</b></h6>
+              <p class="price mb-2">1950 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('G.W: 6.8 KG','1950 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img15.jpeg" class="card-img-top img-fluid product-img" alt="Xprinter XP-233B">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Barcode Printer<br><b>Xprinter XP-233B</b></h6>
+              <p class="price mb-2">2600 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('Xprinter XP-233B','2600 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img17.jpeg" class="card-img-top img-fluid product-img" alt="Xprinter XP-Q 807K USB">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Receipt Printer<br><b>Xprinter XP-Q 807K USB</b></h6>
+              <p class="price mb-2">2450 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('Xprinter XP-Q 807K USB','2450 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <img src="img24jpeg.jpeg" class="card-img-top img-fluid product-img" alt="Zebra ZD220">
+            <div class="card-body p-2">
+              <h6 class="mb-1">Zebra ZD220</h6>
+              <p class="price mb-2">14000 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('Zebra ZD220','14000 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <!-- لو اسم الملف عندك فيه مسافات: الأفضل تعمله img18.jpeg وتغيره هنا -->
+            <img src="WhatsApp Image 2025-12-17 at 7.14.12 PM.jpeg" class="card-img-top img-fluid product-img" alt="RONGTA">
+            <div class="card-body p-2">
+              <h6 class="mb-1">RONGTA</h6>
+              <p class="price mb-2">2200 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('RONGTA','2200 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- 16 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <!-- لو اسم الملف عندك فيه مسافات: الأفضل تعمله img18.jpeg وتغيره هنا -->
+            <img src="img21.jpeg" class="card-img-top img-fluid product-img" alt="RONGTA">
+            <div class="card-body p-2">
+              <h6 class="mb-1">كاشير 40 متر</h6>
+              <p class="price mb-2">25 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('كاشير 40 متر','25 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- 17 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <!-- لو اسم الملف عندك فيه مسافات: الأفضل تعمله img18.jpeg وتغيره هنا -->
+            <img src="img21.jpeg" class="card-img-top img-fluid product-img" alt="RONGTA">
+            <div class="card-body p-2">
+              <h6 class="mb-1">كاشير 50 متر</h6>م
+              <p class="price mb-2">35 EGP</p>
+               <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('كاشير 50 متر','35 EGP','')">Buy</button>
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- 18 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <!-- لو اسم الملف عندك فيه مسافات: الأفضل تعمله img18.jpeg وتغيره هنا -->
+            <img src="img21.jpeg" class="card-img-top img-fluid product-img" alt="RONGTA">
+            <div class="card-body p-2">
+              <h6 class="mb-1">كاشير 70 متر</h6>
+              <p class="price mb-2">39 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('كاشير 70 متر','39 EGP','')">Buy</button>     
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- 19 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <!-- لو اسم الملف عندك فيه مسافات: الأفضل تعمله img18.jpeg وتغيره هنا -->
+            <img src="img21.jpeg" class="card-img-top img-fluid product-img" alt="RONGTA">
+            <div class="card-body p-2">
+              <h6 class="mb-1">كاشير 80 متر</h6>
+              <p class="price mb-2">43 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('كاشير 80 متر','43 EGP','')">Buy</button>             
+              <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- 20 -->
+        <div class="col-6 col-xl-custom">
+          <div class="card h-100 text-center product-card shadow-sm">
+            <!-- لو اسم الملف عندك فيه مسافات: الأفضل تعمله img18.jpeg وتغيره هنا -->
+            <img src="img21.jpeg" class="card-img-top img-fluid product-img" alt="RONGTA">
+            <div class="card-body p-2">
+              <h6 class="mb-1">كاشير 25 متر</h6>
+              <p class="price mb-2">19 EGP</p>
+              <button class="btn btn-warning w-100 mb-2 buy"onclick="buyProduct('كاشير 25 متر','19 EGP','')">Buy</button>
+               <button class="btn btn-dark w-100 details">Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <h3>Contact Us</h3>
+    <p>© 2025 TechStore. All rights reserved.</p>
+    <div class="social">
+      <a href="https://wa.me/+201127203547" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.facebook.com/share/1WDD2FeQTe/?mibextid=wwXIf" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/awad________6666?igsh=MTI5Yzk2c2ZvenkycQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
